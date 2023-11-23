@@ -3,8 +3,9 @@ author: mattdavis0351
 description: validation action for this lab
 
 inputs:
-  your-secret: ${{ secrets.MY_SECRET }}
+  your-secret: 
     description: A Personal Access Token with the repo scope stored as a secret
+    value: ${{ secrets.MY_SECRET }}
     required: true
   secrets-context:
     description: The GitHub Actions secrets context object
